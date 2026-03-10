@@ -2,25 +2,21 @@ import os
 
 os.system
 
+nome = input("Digite o nome: ")
+sexo = input("DIgite o sexo (M/F): ")
+estado_civil = input("Digite o estado civil: ")
 
-nome = input("Digite seu nome:")
-sexo =  input("Digite seu sexo (M/F):").lower()
-estado_civil = input("Digite o estado civil:").lower()
-
-
-if sexo == "F" and estado_civil == "casada":
-    print tempo_casada = int(input("Digite o tempo de casada em anos:"))
-       
-
-print(" ===== Dados da pessoa =====")
+tempo_casada = ""
+if sexo.upper() == "F" and estado_civil.upper() == "Casada":
+    tempo_casada = input("Digite o tempo de casada em anos: ")
+    
+print("====== Dados do usuario =====")
 print("Nome:", nome)
-print("Sexo:", sexo)       
-print("Estado Civil", estado_civil)
+print("Sexo:", sexo)  
+print("Estado civil:", estado_civil)
 
-if tempo_casada and tempo_casada :
-    print("Tempo de casada:", tempo_casada, "anos")
+if tempo_casada != "":
+    print("Tempo de casado: ",tempo_casada, "anos")
     
     
-       
-       
-       
+    

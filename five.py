@@ -2,26 +2,23 @@ import os
 
 os.system("cls")
 
-a = int(input("Digite seu numero:"))
-operador = input("Digite o operador(+,-,*,/)")
-b = int(input("Digite seu numero:"))
+operacao = input("Digite a operacao (+,-,/<:,*)")
 
-macth operador:
-    case "+":
-        resultado = a + b
-    case "-":
-        resultado = a - b
-    case "*":
-        resultado = a * b
-    case "/":
-        resultado = a / b
-    case_:
-        print("Opcao invalida.")
-        resultado = 0
-        
-print(f"Resultado: {resultado}")        
-        
-        
-    
-    
+a = int(input("Digite o valor de a: "))
+b = int(input("Digite o valor de b: "))
 
+
+if operacao == "+":
+    resultado = a + b
+elif operacao == "-":
+    resultado = a - b
+elif operacao == "*":
+    resultado = a * b
+elif operacao == "/":
+    resultado = a /b
+else:
+    print("Operacao invalida: ")
+    resultado = 0
+    
+if resultado != 0:
+    print("Resultado", resultado)
