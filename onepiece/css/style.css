@@ -1,0 +1,28 @@
+h1{
+    font-size: 90px;
+    color: #d30e00;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr{
+    width: 70%;
+    background: #d30e00;
+    height: 1px;
+}
+
+p{
+    font-size: 25px;
+    margin: auto;
+    width: 90%;
+}
+
+img{
+    height: 1020px;
+}
+
+.box{
+    width: fit-content;
+    margin: auto;
+}
