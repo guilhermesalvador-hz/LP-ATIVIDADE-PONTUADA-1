@@ -1,0 +1,35 @@
+body{
+
+    height: 100vh;
+    background: linear-gradient(gold, red, rgb(5, 195, 243));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    height: 450px;
+}
+.central{
+    background-color: aliceblue;
+    width: fit-content;
+    box-shadow:inset 2px 2px 8px black;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+button{
+    font-size: 25px;
+    width: 70%;
+    background: red;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+
+}
