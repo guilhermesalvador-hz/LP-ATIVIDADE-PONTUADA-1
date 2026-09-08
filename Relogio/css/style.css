@@ -1,0 +1,62 @@
+/* Redefinição básica para garantir que o layout ocupe a tela inteira */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do fundo da página */
+body {
+    background-image: url(/img/diokk.jpg); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center; /* Garante que a imagem fique centralizada */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex; /* CORRIGIDO: Era 'center', mudou para 'flex' para ativar o alinhamento */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Container principal que junta e alinha todos os elementos do relógio */
+.central {
+    display: flex; /* Alinha os blocos de hora, minuto e segundo em linha */
+    flex-direction: row; /* Garante explicitamente o alinhamento horizontal */
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os números e os dois-pontos */
+    background: rgba(255, 255, 255, 0.03); /* Fundo sutil para o relógio */
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Sombra elegante */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    width: fit-content;
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+}
+
+/* Estilo individual dos blocos de números (Horas, Minutos, Segundos) */
+.central div {
+    background-color: #1f2833; /* Caixa interna mais clara que o fundo */
+    background: center 40%;
+    padding: 15px 25px;
+    border-radius: 50px;
+    min-width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo do texto dos números e dos dois-pontos */
+.central span {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff; /* Cor azul neon/ciano vibrante */
+    text-shadow: 0 0 10px rgba(250, 252, 252, 0.5); /* Efeito de brilho neon */
+}
+
+/* Deixa os dois-pontos ( : ) ligeiramente mais discretos e com efeito de piscar */
+.central > span {
+    color: #ffffff;
+    font-size: 3rem;
+    animation: piscar 1s infinite;
+}
+
