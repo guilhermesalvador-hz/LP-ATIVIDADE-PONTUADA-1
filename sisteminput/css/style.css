@@ -1,0 +1,78 @@
+body {
+    background-image: url('../img/zorro.png');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.center {
+    padding: 28px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.521);
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    blur: 0.5px;
+
+}
+
+h1 {
+    font-size: 24px;
+    color: #1b1b1b;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #313131;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover{
+        background-color: #0056b3;
+        transform: scale(1.01);
+    }
+}
+
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #e2f0d9;
+    display: none; /* Começa escondido e o JS muda para 'block' */
+}
